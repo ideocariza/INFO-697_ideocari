@@ -4,11 +4,11 @@ import random
 # Declare function for title 'screen' dialogue
 def title_screen():
     while True:
+        display.scroll('Odd or Not * (A) FOR INSTRUCTIONS * (B) TO START * ')
         if (button_b.was_pressed()):
             game()
         elif (button_a.was_pressed()):
             instructions()
-        display.scroll('Odd or Not * (A) FOR INSTRUCTIONS * (B) TO START * ')
         sleep(2000)
 
 # Declare function for displaying instructions
